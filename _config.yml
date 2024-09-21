@@ -21,8 +21,9 @@
 title: 醫學為什麼有效？
 email: cervelleless@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-在發表偏差的文化且生物醫學的研究再現性低落的情形下，醫學還得面對個體的差異以及診斷的不確性，照體說，這樣的醫學一定會充滿了醫不好的人，可是，臨床上無論是醫生的自信，或是病人的回應，似乎都看不到這個問題，醫學出奇的有用，這背後的原因到底是什麼？我想解答這個神奇的問題。
-baseurl: "med" # the subpath of your site, e.g. /blog
+  在發表偏差的文化且生物醫學的研究再現性低落的情形下，醫學還得面對個體的差異以及診斷的不確性，照體說，這樣的醫學一定會充滿了醫不好的人，可是，臨床上無論是醫生的自信，或是病人的回應，似乎都看不到這個問題，醫學出奇的有用，這背後的原因到底是什麼？我想解答這個神奇的問題。
+
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "zenvoyage.art" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username:
 #github_username:  jekyll
