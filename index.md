@@ -4,5 +4,22 @@
 
 layout: default
 ---
-# hahah
-ello
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.date | date: "%Y-%m-%d" }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+
+
+<ul>
+  {% for article in site.articles %}
+    <li>
+      <a href="{{ article.url }}">{{ article.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

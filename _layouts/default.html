@@ -1,26 +1,26 @@
 <!doctype html>
-<html lang="zh-TW" data-theme="dark">
+<html lang="zh-Hant-TW" class="dark">
   <head>
     {% include head.html %}
   </head>
-<body>
-  <header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-  	<li><a href="/about">About</a></li>
-  	<li><a href="/contact">Contact</a></li>
-	<li><button id="dark-mode-toggle" class="small">Toggle Dark Mode</button></li>
-     </ul>
-  </header>
-  <main class="container">
-    {{ content }}
-  </main>
-  <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-  </footer>
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+<body class="bg-black text-white">
+    <header>
+      <h1>{{ site.title }}</h1>
+      <tr />
+      <nav>
+        <ul>
+          <li><a href="/">首頁</a></li>
+  	  <li><a href="/about">About</a></li>
+  	  <li><a href="/contact">Contact</a></li>
+	  <li><a href="#" onclick="toggleTheme(document.documentElement.classList.contains('dark') ? false : true)">深色模式</a>
+        </ul>
+      </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+    </footer>
 </body>
 </html>
 
